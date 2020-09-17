@@ -8,3 +8,9 @@ export type User = {
   id: number
   name: string
 }
+
+export type Product = {
+  id: string
+  name: string
+  descr: string
+}
