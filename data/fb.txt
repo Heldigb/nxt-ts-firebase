@@ -1,0 +1,12 @@
+
+
+const firebaseApp = firebase.initializeApp({
+    apiKey: "AIzaSyBYATrCeWITbX9xXCsxJapnWnImBquOkaU",
+    authDomain: "next-doc.firebaseapp.com",
+    databaseURL: "https://next-doc.firebaseio.com",
+    projectId: "next-doc",
+    storageBucket: "next-doc.appspot.com",
+    messagingSenderId: "3489312543",
+    appId: "1:3489312543:web:79c6ab600bd53cc8f50a2a"
+})
+

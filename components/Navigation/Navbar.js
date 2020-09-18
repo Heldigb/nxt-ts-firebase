@@ -10,7 +10,7 @@ const NavLink = ({children, ...props}) => (
 const Navbar = () => {
     return (
         <Flex
-            position="fixed"
+
             bg="rgb(39, 39, 51 , 0.9)"
             w="100%"
             px={5}
@@ -36,6 +36,7 @@ const Navbar = () => {
                 <NavLink href="/users">Users</NavLink>
                 <NavLink href="/about">About</NavLink>
                 <NavLink href="/api/users">API</NavLink>
+                <NavLink href="/products">Products</NavLink>
                 <NavLink>Contact</NavLink>
             </Box>
         </Flex>
