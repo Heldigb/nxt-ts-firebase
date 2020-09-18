@@ -1,17 +1,17 @@
 import React, {useState, useEffect, FC} from 'react';
-import {postsRef} from "../data/firebase";
-import Product from "../components/Products/Product";
-import CreateProduct from "../components/Products/CreateProduct";
-import Layout from '../components/Layout'
+import {postsRef} from "../../data/firebase";
+import Product from "../../components/Products/Product";
+import CreateProduct from "../../components/Products/CreateProduct";
+import Layout from '../../components/Layout'
+
+
 interface ProductTS {
     id: string;
     name: string;
     descr: string;
 
 }
-
-
-const Products: FC = () => {
+const Index: FC = () => {
     const [products, setProducts] = useState<any>([])
     useEffect(() => {
         const fetchData = async () => {
@@ -20,7 +20,6 @@ const Products: FC = () => {
         }
         fetchData();
     }, []);
-
     return (
         <Layout>
             <CreateProduct/>
@@ -40,11 +39,8 @@ const Products: FC = () => {
                     )
                 }
             </ul>
-
-
-
         </Layout>
     );
 };
 
-export default Products;
+export default Index;
